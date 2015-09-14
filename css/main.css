@@ -1,28 +1,39 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+body, ul, li, h1, h2, h3, h4, h5, h6, div, p {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #E06D26;
+	color: white;
+	text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #E06D26;
+	color: white;
+	text-shadow: none;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 audio,
@@ -31,140 +42,315 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
 }
-
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+	font-size: 16px;
+	line-height: 26px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+	width: 90%;
+	margin: 0 5%;
 }
 
 /* ===================
-    ALL: Orange Theme
+	ALL: Orange Theme
    =================== */
 
-.header-container {
-    border-bottom: 20px solid #e44d26;
-}
+
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+	background: rgba(255,255,255,1);
+}
+
+.header-container {
+	background: rgba(51,51,51,.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 0 1px 3px rgba(0,0,0,.3);
+	z-index: 1000;
 }
 
 .title {
-    color: white;
+	color: white;
 }
 
 /* ==============
-    MOBILE: Menu
+	MOBILE: Menu
    ============== */
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+#logo-container {
+	margin-left: 50px;
+	display: block;
+	float: left;
 }
 
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
+#logo {
+	display: table-cell;
+	vertical-align: middle;
 }
 
-nav a:hover,
-nav a:visited {
-    color: white;
+#logo img {
+	height: 50px;
+	margin-top: 13px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+#logo h1 {
+	display: inline-block;
+	margin: 0;
+}
+
+nav#main-nav {
+	padding: 0;
+	display: none;
+}
+
+.menu-btn {
+	float: right;
+	font-size: 1.6em;
+	color: #fff;
+	padding: 15px;
+}
+
+nav#main-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav#main-nav li {
+
+}
+
+nav#main-nav a {
+	display: block;
+	margin-bottom: 10px;
+	padding: 15px 0;
+
+	text-align: center;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	letter-spacing: 2px;
+	
+}
+
+nav#main-nav a:hover,
+nav#main-nav a:visited {
+	color: #fff;
+
+}
+
+nav#main-nav a:hover {
+
 }
 
 /* ==============
-    MOBILE: Main
+	MOBILE: Billboard
+   ============== */
+
+.billboard {
+	background-image: url('http://lorempixel.com/output/city-q-c-1920-826-9.jpg');
+	background-position: center center;
+	background-size: cover;
+	height: 400px;
+	width: 100%;
+	text-align: center;
+}
+
+.billboard-content {
+	margin: 0 auto;
+	padding-top: 125px;
+}
+
+.billboard-content h1 {
+	font-size: 2.5em;
+	line-height: 125%;
+
+	color: white;
+	text-shadow: 2px 2px 5px rgba(0,0,0,.5);
+}
+
+.billboard-content h2 {
+	display: inline-block;
+	padding: 10px 15px;
+	margin-top: 10px;
+
+	font-weight: normal;
+	font-size: 1em;
+
+	color: white;
+	text-shadow: 2px 2px 5px rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.6);
+}
+
+
+
+/* ==============
+	MOBILE: Main
    ============== */
 
 .main {
-    padding: 30px 0;
+	padding: 30px 0;
 }
 
 .main article h1 {
-    font-size: 2em;
+	font-size: 2em;
 }
 
 .main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
+	color: white;
+	padding: 0px 5% 10px;
 }
 
 /* ===============
-    ALL: IE Fixes
+	ALL: IE Fixes
    =============== */
 
 .ie7 .title {
-    padding-top: 20px;
+	padding-top: 20px;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+/* ==============
+	MOBILE: Callout Section
+   ============== */
+section.callout {
+	padding: 100px 25px;
+	text-align: center;
+}
 
+h2.section-header {
+	max-width: 800px;
+	margin: 0 auto;
 
+	font-family: 'Roboto Condensed';
+	font-size: 2.3em;
+	line-height: 125%;
+	font-weight: normal;
 
+	text-transform: uppercase;
+}
 
+h4 {
+	color: #E06D26;
+	text-transform: uppercase;
+	font-size: 1em;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
 
+.callout p {
+	max-width: 700px;
+	margin: 0 auto;
+	margin-top: 15px;
+	font-weight: lighter;
+}
 
+/* ==============
+	MOBILE: Showcase Section
+   ============== */
+.showcase {
+	width: 100%;
+}
 
+.showcase article {
+	width: 100%;
+	float: left;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
 
+.showcase .hover-panel {
+	height: 100%;
+	width: 100%;
+	padding: 20px;
 
+	color: white;
+}
 
+.hover-panel-inner {
+	background-color: rgba(0,0,0,.75);
+	height: 100%;
+	width: 100%;
+	border: 1px solid white;
+}
 
+.hover-panel-content {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+.hover-panel-content h4 {
+	font-weight: normal;
+	font-size: .9em;
+}
+
+/* ==============
+	MOBILE: Clients Section
+   ============== */
+
+section#client-section h4 {
+	margin-bottom: 40px;
+}
+
+.client-panel {
+	width: 50%;
+	float: left;
+	margin-bottom: 10px;
+	padding: 5px 5px;
+}
+
+.client-panel-content {
+	background-color: #ddd;
+}
+
+.client-panel-content img {
+	width: 60%;
+	padding: 40px 0;
+}
 
 
 
@@ -172,92 +358,230 @@ nav a:hover {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 600px) {
 
 /* ====================
-    INTERMEDIATE: Menu
+	INTERMEDIATE: Footer
    ==================== */
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
+   .footer-container section {
+   	width: 33%;
+   }
 
 @media only screen and (min-width: 768px) {
 
 /* ====================
-    WIDE: CSS3 Effects
+	INTERMEDIATE: Menu
    ==================== */
+	.menu-btn {
+		display: none;
+	}
 
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
+	#logo-container {
+		float: left;
+	}
 
-/* ============
-    WIDE: Menu
-   ============ */
+	#nav-container {
+		float: right;
+	}
 
-    .title {
-        float: left;
-    }
+	nav#main-nav {
+		display: table-cell;
+		vertical-align: middle;
 
-    nav {
-        float: right;
-        width: 38%;
-    }
+	}
 
-/* ============
-    WIDE: Main
-   ============ */
+	nav#main-nav a {
+		padding: 20px 0 25px 0;
+		margin: 0 15px;
+		display: inline-block;
+		border-top: 4px solid transparent;
+		transition: all .4s;
+	}
 
-    .main article {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
+	nav#main-nav a:hover {
+		border-top: 4px solid #E06D26;
 }
 
-@media only screen and (min-width: 1140px) {
+
+/* ========================
+	INTERMEDIATE: IE Fixes
+   ======================== */
+
+	nav ul li {
+		display: inline;
+	}
+
+	.oldie nav a {
+		margin: 0 0.7%;
+	}
+
+/* ==============
+	INTERMEDIATE: Billboard
+   ============== */
+
+	.billboard, .billboard-content {
+		height: 600px;
+	}
+
+	.billboard-content {
+		padding-top: 200px;
+	}
+
+	.billboard-content h1 {
+		font-size: 4.5em;
+	}
+
+	.billboard-content h2 {
+		font-size: 1.5em;
+	}
+
+/* ==============
+	INTERMEDIATE: Callout Section
+   ============== */
+	
+
+/* ==============
+	INTERMEDIATE: Showcase Section
+   ============== */
+
+	.showcase article {
+		width: 50%;
+		height: 300px;
+   }
+
+/* ==============
+	INTERMEDIATE: Clients Section
+   ============== */
+
+	section#client-section h4 {
+		margin-bottom: 40px;
+	}
+
+	.client-panel {
+		width: 25%;
+		padding: 10px 10px;
+	}
+
+	.client-panel-content img {
+		padding: 50px 0;
+	}
+
+/* ==============
+	INTERMEDIATE: Footer
+   ============== */
+	.footer-container {
+		background-color: #333;
+		padding: 30px 30px;
+		color: white;
+	}
+
+	footer {
+		margin: 0 50px;
+	}
+
+	.footer-container section {
+		display: inline-block;
+	}
+
+	div.footer-contact {
+		color: white;
+		width: 65%;
+		display: inline-block;
+	}
+
+	footer section {
+		width: 33.333%;
+	}
+
+	footer p {
+		font-weight: lighter;
+	}
+
+	.footer-container h3 {
+		font-family: 'Roboto Condensed';
+		font-weight: normal;
+		font-size: 1.4em
+	}
+
+	.footer-block-body {
+		margin: 10px 0;
+	}
+
+	#footer-connect {
+		vertical-align: top;
+		margin: 0;
+	}
+
+	footer input {
+		padding: 5px;
+		width: 70%;
+		border: none;
+	}
+
+	.submit-btn {
+		display: inline-block;
+		padding: 2px 6px;
+		margin-left: -5px;
+
+		background-color: transparent;
+		border: 1px solid white;
+	}
+
+
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+	WIDE: CSS3 Effects
+   ==================== */
+
+
+/* ============
+	WIDE: Menu
+   ============ */
+
+	.title {
+		float: left;
+	}
+
+/* ============
+	WIDE: Main
+   ============ */
+
+	.main article {
+		float: left;
+		width: 57%;
+	}
+
+	.main aside {
+		float: right;
+		width: 28%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	
+	.showcase article {
+		width: 33.3333%;
+	}
+
+	.client-panel {
+		padding: 10px 10px;
+	}
+	.client-panel-content img {
+	width: 60%;
+	padding: 60px 0;
+   }
+
 
 /* ===============
-    Maximal Width
+	Maximal Width
    =============== */
 
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
+	.wrapper {
+		width: 1024px; /* 1140px - 10% for margins */
+		margin: 0 auto;
+	}
 }
 
 /* ==========================================================================
@@ -265,47 +589,47 @@ nav a:hover {
    ========================================================================== */
 
 .hidden {
-    display: none !important;
-    visibility: hidden;
+	display: none !important;
+	visibility: hidden;
 }
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 }
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
 }
 
 .invisible {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+	content: " ";
+	display: table;
 }
 
 .clearfix:after {
-    clear: both;
+	clear: both;
 }
 
 .clearfix {
-    *zoom: 1;
+	*zoom: 1;
 }
 
 /* ==========================================================================
@@ -313,61 +637,61 @@ nav a:hover {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
 
-    thead {
-        display: table-header-group;
-    }
+	thead {
+		display: table-header-group;
+	}
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
 
-    img {
-        max-width: 100% !important;
-    }
+	img {
+		max-width: 100% !important;
+	}
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
 }

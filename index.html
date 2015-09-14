@@ -13,8 +13,13 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -23,66 +28,160 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">h1.title</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav>
+                <div id="logo-container">
+                    <div id="logo">
+                        <a href="index.html"><img src="img/mainlogo.png"></a>
+                    </div>
+                </div>
+                <div id="nav-container">
+                    <div class="menu-btn">
+                        <i class="fa fa-bars"></i>
+                    </div>   
+                    <nav id="main-nav">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
         </div>
 
-        <div class="main-container">
-            <div class="main wrapper clearfix">
+        <section class="billboard">
+            <div class="billboard-content">
+                <h1><span style="font-family: 'Pacifico'; font-weight:normal;">Brilliant Ideas</span><br>Brilliant Results</h1>
+                <h2>Branding • Digital Marketing • Web • Print</h2>
+            </div>
+        </section>
 
-                <article>
-                    <header>
-                        <h1>article header h1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-                    </header>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <footer>
-                        <h3>article footer h3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-                    </footer>
-                </article>
+        <section class="callout">
+            <h4>We are Oxford Communications</h4>
+            <h2 class="section-header">Leading with strategy. Providing solutions. Building brands. Driving results.</h2>
+            <p>Since 1986, we have been developing winning strategies and campaigns for clients ranging from Fortune 100 companies, retailers, destinations and franchise organizations, to universities, hospitals, nonprofits and emerging entrepreneurs.</p>
+        </section>
 
-                <aside>
-                    <h3>aside</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                </aside>
+        <section class="showcase showcase-1 clearfix" id="work">
+            <article style="background-image: url('img/dossier-cover.png');">
+                <div class="hover-panel" style="opacity: 0;">
+                    <div class="hover-panel-inner" >
+                        <div class="hover-panel-content">
+                            <h3>DOSSIER SYSTEMS INC.</h3>
+                            <h4>Branding, Web Design</h4>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article style="background-image: url('http://lorempixel.com/600/400/technics/');">
+                <div class="hover-panel" style="opacity: 0;">
+                    <div class="hover-panel-inner" >
+                        <div class="hover-panel-content">
+                            <h3>DOSSIER SYSTEMS INC.</h3>
+                            <h4>Branding, Web Design</h4>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article style="background-image: url('http://lorempixel.com/600/400/people/');">
+                <div class="hover-panel" style="opacity: 0;">
+                    <div class="hover-panel-inner" >
+                        <div class="hover-panel-content">
+                            <h3>DOSSIER SYSTEMS INC.</h3>
+                            <h4>Branding, Web Design</h4>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article style="background-image: url('http://lorempixel.com/600/400/nightlife/');">
+                <div class="hover-panel" style="opacity: 0;">
+                    <div class="hover-panel-inner" >
+                        <div class="hover-panel-content">
+                            <h3>DOSSIER SYSTEMS INC.</h3>
+                            <h4>Branding, Web Design</h4>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article style="background-image: url('http://lorempixel.com/600/400/business/');">
+                <div class="hover-panel" style="opacity: 0;">
+                    <div class="hover-panel-inner" >
+                        <div class="hover-panel-content">
+                            <h3>DOSSIER SYSTEMS INC.</h3>
+                            <h4>Branding, Web Design</h4>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article style="background-image: url('http://lorempixel.com/600/400/abstract/');">
+                <div class="hover-panel" style="opacity: 0;">
+                    <div class="hover-panel-inner" >
+                        <div class="hover-panel-content">
+                            <h3>DOSSIER SYSTEMS INC.</h3>
+                            <h4>Branding, Web Design</h4>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
 
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
+        <div style="clear:both;"></div>
+
+        <section class="callout clearfix" id="client-section">
+            <h4>Our Clients</h4>
+            <div class="client-panel">
+                <div class="client-panel-content">
+                    <img src="img/dossier-logo.png">
+                </div>
+            </div>
+            <div class="client-panel">
+                <div class="client-panel-content">
+                    <img src="img/dossier-logo.png">
+                </div>
+            </div>
+            <div class="client-panel">
+                <div class="client-panel-content">
+                    <img src="img/dossier-logo.png">
+                </div>
+            </div>
+            <div class="client-panel">
+                <div class="client-panel-content">
+                    <img src="img/dossier-logo.png">
+                </div>
+            </div>
+        </section>
+
+        <div style="clear:both;"></div>
 
         <div class="footer-container">
-            <footer class="wrapper">
-                <h3>footer</h3>
+            <footer id="contact">
+                <section>
+                    <h3>Work With Us</h3>
+                    <div class="footer-block-body">
+                        <p>solutions@oxfordcommunications.com</p>
+                        <p>609.393.4242</p>
+                    </div>
+                </section>
+                <section>
+                    <h3>Find Us</h3>
+                    <div class="footer-block-body">
+                        <p>11 Music Mountain Blvd.</p>
+                        <p>Lambertville, NJ 08530</p>
+                    </div>
+                </section>
+                <section id="footer-connect">
+                    <h3>Connect With Us</h3>
+                    <h4>Newsletter Signup</h4>
+                    <input type="text" placeholder="Email Address">
+                    <button class="submit-btn">SUBMIT</button>
+                </section>
             </footer>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>
+</script></script></body></script></head></html>
