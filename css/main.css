@@ -62,6 +62,7 @@ textarea {
 	padding: 0.2em 0;
 }
 
+
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
@@ -185,7 +186,6 @@ nav#main-nav a:hover {
    ============== */
 
 .billboard {
-	background-image: url('http://lorempixel.com/output/city-q-c-1920-826-9.jpg');
 	background-position: center center;
 	background-size: cover;
 	height: 400px;
@@ -256,9 +256,10 @@ nav#main-nav a:hover {
 section.callout {
 	padding: 100px 25px;
 	text-align: center;
+	background-color: #fff;
 }
 
-h2.section-header {
+.section-header {
 	max-width: 800px;
 	margin: 0 auto;
 
@@ -352,6 +353,87 @@ section#client-section h4 {
 	padding: 40px 0;
 }
 
+/* ====================
+	MOBILE: Section - Image
+   ==================== */
+section.image img{
+	width: 100%;
+}
+
+/* ====================
+	MOBILE: Footer
+   ==================== */
+
+.footer-container {
+	background-color: #333;
+	padding: 30px 30px;
+	color: white;
+}
+
+footer {
+	margin: 0 50px;
+	text-align: center;
+}
+
+.footer-container section {
+	display: inline-block;
+}
+
+div.footer-contact {
+	color: white;
+	width: 65%;
+	display: inline-block;
+}
+
+footer section {
+	width: 100%;
+	padding: 20px 0;
+}
+
+footer p {
+	font-weight: lighter;
+}
+
+.footer-container h3 {
+	font-family: 'Roboto Condensed';
+	font-weight: normal;
+	font-size: 1.4em;
+}
+
+.footer-block-body {
+	margin: 10px 0;
+}
+
+#footer-connect {
+	vertical-align: top;
+	margin: 0;
+}
+
+footer input {
+	padding: 5px;
+	width: 70%;
+	border: none;
+}
+
+.submit-btn {
+	display: inline-block;
+	padding: 2px 6px;
+	margin-left: -5px;
+
+	background-color: transparent;
+	border: 1px solid white;
+}
+
+#bottom-bar {
+	background-color: #111;
+	color: #999;
+	font-size: 12px;
+	padding: 10px 70px;
+}
+
+#bottom-bar div {
+	display: inline-block;
+}
 
 
 /* ==========================================================================
@@ -630,6 +712,14 @@ section#client-section h4 {
 
 .clearfix {
 	*zoom: 1;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
 }
 
 /* ==========================================================================
