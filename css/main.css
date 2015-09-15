@@ -140,10 +140,11 @@ nav#main-nav {
 
 .menu-btn {
 	float: right;
-	font-size: 1.6em;
+	font-size: 2em;
 	color: #fff;
-	padding: 15px;
+	padding: 21px;
 }
+
 
 nav#main-nav ul {
 	margin: 0;
@@ -435,6 +436,104 @@ footer input {
 	display: inline-block;
 }
 
+/* ====================
+	MOBILE: Blog
+   ==================== */
+#post-image {
+	width: 100%;
+	height: 400px;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+#post-title {
+	position: absolute;
+	bottom: 30px;
+	left: 10%;
+	width: 80%;
+	max-width: 1024px;
+	display: inline-block;
+}
+
+.post-wrapper {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+#post-title h1 {
+	font-family: 'Roboto Condensed';
+	font-size: 2em;
+	line-height: 150%;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: white;
+	background-color: rgba(0,0,0,.7);
+	display: inline;
+	padding: 5px;
+}
+
+.post-wrapper p {
+	margin-bottom: 20px;
+}
+
+.post-details {
+	display: inline-block;
+	margin-bottom: 20px;
+	color: #999;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: ;
+	font-family: 'Roboto Condensed'
+}
+
+p.quote {
+	text-align: center;
+	font-family: 'Roboto Condensed';
+	font-size: 2em;
+	font-style: italic;
+	line-height: 125%;
+
+	padding: 30px;
+
+	border-left: 3px solid #E06D26;
+
+	margin: 50px auto;
+	max-width: 720px;
+	background-color: #f1f1f1;
+}
+
+.author-block {
+	border:1px solid #ddd;
+	padding: 20px;
+	box-shadow: 2px 2px 5px #ddd;
+	width: 80%;
+	margin: 50px auto;
+	max-width: 700px;
+}
+
+.author-block div {
+	display: inline-block;
+}
+
+.author-image {
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.author-bio {
+	width: 100%;
+}
+
+.author-image img {
+	border-radius: 70px;
+	width: 130px;
+	border: 1px solid #ddd;
+	display: inline-block;
+}
 
 /* ==========================================================================
    Media Queries
@@ -482,7 +581,11 @@ footer input {
 
 	nav#main-nav a:hover {
 		border-top: 4px solid #E06D26;
-}
+	}
+
+	nav#main-nav a.active {
+		border-top: 4px solid #E06D26;
+	}
 
 
 /* ========================
@@ -609,6 +712,24 @@ footer input {
 		border: 1px solid white;
 	}
 
+	#post-title h1 {
+		font-size: 2.5em;
+	}
+
+	.author-image {
+		width: 25%;
+		text-align: center;
+		float: left;
+		padding: 0;
+
+	}
+
+	.author-bio {
+		width: 75%;
+		float: left;
+		padding-left: 40px;
+	}
+
 
 
 @media only screen and (min-width: 768px) {
@@ -666,6 +787,14 @@ footer input {
 	}
 }
 
+@media only screen and (min-width: 1130px) {
+	#post-title {
+		width: 900px;
+		left: 50%;
+		margin-left: -450px;
+	}
+}}}}}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -673,6 +802,10 @@ footer input {
 .hidden {
 	display: none !important;
 	visibility: hidden;
+}
+
+.visible {
+	display: block !important;
 }
 
 .visuallyhidden {
